@@ -1,0 +1,103 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* min-height: 95vh; */
+    /* border: 3px solid black; */
+}
+.main {
+    flex: 1;
+    background-color: rgb(255, 244, 234);
+}
+
+h2 {
+    font-style: italic;
+    color: orange;
+    font-size: 2.2rem;
+    padding-left: 100px;
+}
+
+h1 {
+    font-size: 5rem;
+    width: 800px;
+    padding-left: 100px;
+}
+h1 span {
+    color: midnightblue;
+}
+
+.card {
+    padding-left: 100px;
+    width: 44%;
+    float: left;
+}
+.card img {
+    height: 180px;
+    width: 300px;
+    float: left;
+    margin-right: 50px;
+    /* display: inline-block; */
+}
+.card p {
+    display: inline-block;
+    width: 50%;
+}
+
+footer {
+    /* text-align: right; */
+    float: right;
+    color: midnightblue;
+    clear: both;
+    margin: 180px 0px 100px;
+    border: 2px solid black;
+}
+
+/* 
+    To do
+        [lightsalmon]: mobile devices: 319 - 480px
+        [powderblue]: ipads and tablets: 481 - 1200px
+        [limegreen]: laptops: 1201 - 1600px
+        [seagreen]: desktop: 1601 and more px
+*/
+
+@media (min-width: 319px) and (max-width: 480px) {
+    h2 {
+        font-size: 2rem;
+        padding-left: 20px;
+        font-weight: 100;
+    }
+    h1 {
+        padding-left: 0px;
+        width: 100%;
+        text-align: center;
+        font-size: 4rem;
+        /* font-weight: bolder; */
+    }
+    .card {
+        padding-left: 0px;
+        width: 100%;
+        text-align: justify;
+        /* clear: left; */
+        display: block;
+        padding-left: 20px;
+    }
+    .card img {
+        /* height: 180px; */
+        margin: 10px 0px;
+        width: 80%;
+        /* margin-right: 0px; */
+        /* clear: left; */
+        display: inline;
+        object-fit: cover;
+
+    }
+    .card h3 {
+        font-size: 1.7rem;
+    }
+    .card p {
+        width: 80%;
+        font-weight: 100;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+}
